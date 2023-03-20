@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.33502.453
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Algorithm_1", "Algorithm_1\Algorithm_1.vcxproj", "{B6175DEF-2EBC-4775-A7D3-456F50E66A67}"
-EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "searchK", "searchK\searchK.vcxproj", "{C976BD00-5863-4902-84B4-790257358F02}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "calCoins", "calCoins\calCoins.vcxproj", "{409B35BE-CD00-4ACB-9F56-22BF18015A7D}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "findMaxNumber", "findMaxNumber\findMaxNumber.vcxproj", "{472D4B00-5884-4B24-97C8-D2E143275056}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,14 +17,6 @@ Global
 		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{B6175DEF-2EBC-4775-A7D3-456F50E66A67}.Debug|x64.ActiveCfg = Debug|x64
-		{B6175DEF-2EBC-4775-A7D3-456F50E66A67}.Debug|x64.Build.0 = Debug|x64
-		{B6175DEF-2EBC-4775-A7D3-456F50E66A67}.Debug|x86.ActiveCfg = Debug|Win32
-		{B6175DEF-2EBC-4775-A7D3-456F50E66A67}.Debug|x86.Build.0 = Debug|Win32
-		{B6175DEF-2EBC-4775-A7D3-456F50E66A67}.Release|x64.ActiveCfg = Release|x64
-		{B6175DEF-2EBC-4775-A7D3-456F50E66A67}.Release|x64.Build.0 = Release|x64
-		{B6175DEF-2EBC-4775-A7D3-456F50E66A67}.Release|x86.ActiveCfg = Release|Win32
-		{B6175DEF-2EBC-4775-A7D3-456F50E66A67}.Release|x86.Build.0 = Release|Win32
 		{C976BD00-5863-4902-84B4-790257358F02}.Debug|x64.ActiveCfg = Debug|x64
 		{C976BD00-5863-4902-84B4-790257358F02}.Debug|x64.Build.0 = Debug|x64
 		{C976BD00-5863-4902-84B4-790257358F02}.Debug|x86.ActiveCfg = Debug|Win32
@@ -41,6 +33,14 @@ Global
 		{409B35BE-CD00-4ACB-9F56-22BF18015A7D}.Release|x64.Build.0 = Release|x64
 		{409B35BE-CD00-4ACB-9F56-22BF18015A7D}.Release|x86.ActiveCfg = Release|Win32
 		{409B35BE-CD00-4ACB-9F56-22BF18015A7D}.Release|x86.Build.0 = Release|Win32
+		{472D4B00-5884-4B24-97C8-D2E143275056}.Debug|x64.ActiveCfg = Debug|x64
+		{472D4B00-5884-4B24-97C8-D2E143275056}.Debug|x64.Build.0 = Debug|x64
+		{472D4B00-5884-4B24-97C8-D2E143275056}.Debug|x86.ActiveCfg = Debug|Win32
+		{472D4B00-5884-4B24-97C8-D2E143275056}.Debug|x86.Build.0 = Debug|Win32
+		{472D4B00-5884-4B24-97C8-D2E143275056}.Release|x64.ActiveCfg = Release|x64
+		{472D4B00-5884-4B24-97C8-D2E143275056}.Release|x64.Build.0 = Release|x64
+		{472D4B00-5884-4B24-97C8-D2E143275056}.Release|x86.ActiveCfg = Release|Win32
+		{472D4B00-5884-4B24-97C8-D2E143275056}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
