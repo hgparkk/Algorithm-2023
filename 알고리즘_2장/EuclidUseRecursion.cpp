@@ -9,9 +9,14 @@ int Euclid(int a, int b)
 		return Euclid(b, a % b);
 }
 
-int main()
+int test1_euclid()
 {
-	int a = Euclid(24, 14);
+	int a = Euclid(48, 34);
 	printf("%d\n", a);
 	return 0;
+}
+
+int main()
+{
+	test1_euclid();
 }
