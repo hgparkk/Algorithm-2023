@@ -1,4 +1,11 @@
-﻿#include <stdio.h>
+﻿
+/*
+파일 이름: calCoins.cpp
+설명 : 거스름돈을 최소 동전의 수로 계산하는 프로그램
+작성자 : 박현규
+*/
+
+#include <stdio.h>
 #include <stdlib.h>
 
 struct Ncoins calCoins(int change);

@@ -1,4 +1,11 @@
-﻿#include <stdio.h>
+﻿
+/*
+파일 이름: searchK.cpp
+설명 : 특정한 수 K를 찾는 프로그램
+작성자 : 박현규
+*/
+
+#include <stdio.h>
 #include <stdlib.h>
 
 int searchK(int NumArray[], int count, int K);

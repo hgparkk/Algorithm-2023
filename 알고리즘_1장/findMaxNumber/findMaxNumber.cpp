@@ -1,4 +1,11 @@
-﻿#include <stdio.h>
+﻿
+/*
+파일 이름: findMaxNumber.cpp
+설명 : 가장 큰 수를 반환하는 프로그램
+작성자 : 박현규
+*/
+
+#include <stdio.h>
 
 int findMaxNumber(int NumArray[], int count)
 {
