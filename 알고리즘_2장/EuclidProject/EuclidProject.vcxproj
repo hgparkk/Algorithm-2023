@@ -127,9 +127,9 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="euclid.c" />
-    <ClCompile Include="main.c" />
-    <ClCompile Include="test.c" />
+    <ClCompile Include="euclid.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="test.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="test.h" />
