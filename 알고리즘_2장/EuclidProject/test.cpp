@@ -34,7 +34,7 @@ int testEuclid()
 		}
 	}
 
-	//3. 재귀함수를 이용한 유클리드 알고리즘을 이용하여 1000쌍의 최대 공약수를 구하고, 구한 값을 배열에 저장한다. 동시에 실행시간을 계산한다.
+	//3. 재귀함수를 이용한 유클리드 알고리즘을 이용하여 1000쌍의 최대 공약수를 구하고, 구한 값을 배열에 저장한다. 동시에 실행시간을 체크한다.
 	long long a1array[1000];
 	clock_t startTime1 = clock();
 	for (int i = 0; i < 1000; i++)
@@ -45,7 +45,7 @@ int testEuclid()
 	}
 	clock_t finishTime1 = clock();
 
-	//4. 반복문을 이용한 유클리드 알고리즘을 이용하여 1000쌍의 최대 공약수를 구하고, 구한 값을 배열에 저장한다. 동시에 실행시간을 계산한다.
+	//4. 반복문을 이용한 유클리드 알고리즘을 이용하여 1000쌍의 최대 공약수를 구하고, 구한 값을 배열에 저장한다. 동시에 실행시간을 체크한다.
 	long long a2array[1000];
 	clock_t startTime2 = clock();
 	for(int i = 0; i < 1000; i++)
@@ -63,10 +63,11 @@ int testEuclid()
 			printf("계산 오류");
 	}
 
+	//6. 두 방법의 실행시간을 계산한다.
 	double timeSec1 = (double)((finishTime1 - startTime1) / CLOCKS_PER_SEC);
 	double timeSec2 = (double)((finishTime2 - startTime2) / CLOCKS_PER_SEC);
 	
-	//6. 두 방법의 실행시간을 알린다.
+	//7. 두 방법의 실행시간을 알린다.
 	printf("두 함수의 실행시간은 각각 %lf초, %lf초 입니다 \n", timeSec1, timeSec2);
 
 	return 0;
