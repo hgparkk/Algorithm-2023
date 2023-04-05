@@ -60,7 +60,7 @@ int testEuclid()
 	for (int i = 0; i < 1000; i++)
 	{
 		if (a1array[i] != a2array[i])
-			printf("계산 오류");
+			printf("계산한 수에 차이가 있습니다");
 	}
 
 	//6. 두 방법의 실행시간을 계산한다.
