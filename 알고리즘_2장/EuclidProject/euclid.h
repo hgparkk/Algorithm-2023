@@ -1,5 +1,5 @@
 #pragma once
 
 //Function Prototypes
-int euclidRepeatitive(int a, int b);
-int euclidRecursive(int a, int b);
+long long euclidRepeatitive(long long a, long long b);
+long long euclidRecursive(long long a, long long b);

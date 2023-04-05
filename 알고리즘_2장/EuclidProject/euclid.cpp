@@ -1,11 +1,11 @@
 ﻿
 #include <stdio.h>
 
-int euclidRepeatitive(int a, int b)
+long long euclidRepeatitive(long long a, long long b)
 {
 	if (a < b)
 		return 0;
-	int basv;
+	long long basv;
 	while (b != 0)
 	{
 		basv = b;
@@ -15,7 +15,7 @@ int euclidRepeatitive(int a, int b)
 	return a;
 }
 
-int euclidRecursive(int a, int b)
+long long euclidRecursive(long long a, long long b)
 {
 	if (b == 0)
 		return a;
