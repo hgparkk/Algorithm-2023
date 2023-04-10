@@ -16,7 +16,7 @@ int Euclid(int a, int b)
 
 int main()
 {
-	int a = Euclid(48, 34);
+	int a = Euclid(34, 24);
 	printf("%d\n", a);
 	return 0;
 }
