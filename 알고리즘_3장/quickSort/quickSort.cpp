@@ -7,7 +7,6 @@ void quickSort(int A[], int left, int right)
     int pivot;
     int low = left;
     int high = right + 1;
-    pivot = A[left];
 }
 
 void printArray(int A[], int size) {
