@@ -1,12 +1,11 @@
 {
   "ExpandedNodes": [
     "",
-    "\\알고리즘_1장",
-    "\\알고리즘_2장",
-    "\\알고리즘_2장\\EuclidProject",
     "\\알고리즘_3장",
-    "\\알고리즘_3장\\mergeSort"
+    "\\알고리즘_3장\\mergeSort",
+    "\\알고리즘_3장\\pointExample",
+    "\\알고리즘_3장\\quickSort"
   ],
-  "SelectedNode": "\\알고리즘_3장\\mergeSort\\mergeSort.cpp",
+  "SelectedNode": "\\알고리즘_3장\\pointExample\\pointExample.cpp",
   "PreviewInSolutionExplorer": false
 }
