@@ -4,40 +4,63 @@
 #include <time.h>
 #define SIZE 8
 
+void printArray(int A[],int size);
+
 void quickSort(int A[], int left, int right)
 {
-    int pivot;
-    int low = left;
+    printArray(A, SIZE);
+    int low = left + 1;
     int high = right;
     long seed = time(NULL);
     srand(seed);
-    pivot = rand() % (right - left);
+    int pivot = rand() % (right - left)+left;
     int p = A[pivot];
     int zero = A[left];
     A[left] = p;
     A[pivot] = zero;
-
-    for (int i = 1; i < right - left; i++)
+    if (left < right)
     {
-        int tmp = A[i];
-        if (tmp < p)
+        while (low <= high)
         {
-
-            A[i] = tmp;
+            while (low <= right && A[low] <= p)
+            {
+                low++;
+            }
+            while (high > left && A[high] >= p)
+            {
+                high--;
+            }
+            printf("%d, %d\n", low, high);
+            if (low > high)
+            {
+                int tmp = A[high];
+                A[high] = A[low];
+                A[low] = tmp;
+            }
+            else
+            {
+                int tmp = A[low];
+                A[low] = A[high];
+                A[high] = tmp;
+            }
+            printArray(A, SIZE);
         }
-        else if (tmp > p)
-        {
-            A[p + 1] = tmp;
-        }
+        printArray(A, SIZE);
+        printf("%d\n", pivot);
+        quickSort(A, left, pivot - 1);
+        quickSort(A, pivot + 1, right);
     }
+    else return;
 }
 
 void printArray(int A[], int size) {
     for (int i = 0; i < size; i++)
         printf("%d ", A[i]);
+    printf("\n");
 }
 
 int main() {
     int A[SIZE] = { 37,10,22,30,35,13,25,24 };
+    quickSort(A, 0, SIZE);
     printArray(A, SIZE);
 }
