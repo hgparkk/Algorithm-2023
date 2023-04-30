@@ -47,6 +47,5 @@ void printChange()
 {
 	int fChange = 730;
 	struct Ncoins fResult = calCoins(fChange);
-	fResult = calCoins(fChange);
 	printf("거스름돈 500원 %d, 100원 %d, 50원 %d 개, 10원 %d 개 입니다\n", fResult.n500, fResult.n100,fResult.n50, fResult.n10);
 }
