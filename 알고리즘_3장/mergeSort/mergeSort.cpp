@@ -1,6 +1,6 @@
 ﻿
 #include <stdio.h>
-#define SIZE 8
+#define SIZE 12
 
 void merge(int A[], int p,int k, int q) 
 {
@@ -33,6 +33,7 @@ void mergeSort(int A[], int p, int q)
     if(p<q)
     {
         int k = (p + q) / 2;
+        printf("%d, %d\n", A[p], A[q]);
         mergeSort(A, p, k);
         mergeSort(A, k + 1, q);
         merge(A, p, k, q);
@@ -45,7 +46,7 @@ void printArray(int A[], int size) {
 }
 
 int main() {
-    int A[SIZE] = { 37,10,22,30,35,13,25,24 };
+    int A[SIZE] = { 6,3,11,9,12,2,8,15,18,10,7,14 };
     mergeSort(A, 0, SIZE - 1);
     printArray(A, SIZE);
 }
