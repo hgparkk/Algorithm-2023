@@ -1,15 +1,10 @@
 {
   "ExpandedNodes": [
     "",
-    "\\알고리즘_1장",
-    "\\알고리즘_1장\\calCoins",
-    "\\알고리즘_2장",
-    "\\알고리즘_2장\\EuclidProject",
+    "\\C언어",
     "\\알고리즘_3장",
-    "\\알고리즘_3장\\mergeSort",
-    "\\알고리즘_3장\\pointExample",
-    "\\알고리즘_3장\\quickSort"
+    "\\알고리즘_3장\\mergeSort"
   ],
-  "SelectedNode": "\\알고리즘_3장\\Algorithm_3.sln",
+  "SelectedNode": "\\알고리즘_3장\\mergeSort\\mergeSort.cpp",
   "PreviewInSolutionExplorer": false
 }

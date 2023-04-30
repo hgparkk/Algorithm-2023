@@ -33,7 +33,6 @@ void mergeSort(int A[], int p, int q)
     if(p<q)
     {
         int k = (p + q) / 2;
-        printf("%d, %d\n", A[p], A[q]);
         mergeSort(A, p, k);
         mergeSort(A, k + 1, q);
         merge(A, p, k, q);
