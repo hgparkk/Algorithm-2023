@@ -6,51 +6,47 @@
 
 void printArray(int A[],int size);
 
+void swap(int *a, int *b) 
+{
+    int tmp = *a;
+    *a = *b;
+    *b = tmp;
+}
+
 void quickSort(int A[], int left, int right)
 {
-    printArray(A, SIZE);
-    int low = left + 1;
-    int high = right;
-    long seed = time(NULL);
-    srand(seed);
-    int pivot = rand() % (right - left)+left;
-    int p = A[pivot];
-    int zero = A[left];
-    A[left] = p;
-    A[pivot] = zero;
-    if (left < right)
+    if (left < right) 
     {
-        while (low <= high)
+        srand(time(NULL));
+        int pivot = rand() % (right - left)+left;
+        swap(&A[left], &A[pivot]);
+        int L = left + 1;
+        int R = right;
+        int p = left + 1;
+        while (L<=R)
         {
-            while (low <= right && A[low] <= p)
+            L = left + 1;
+            R = right;
+            while (L <= right && A[L] < A[left])
             {
-                low++;
+                L++;
             }
-            while (high > left && A[high] >= p)
+            while (R >= left && A[R] > A[left])
             {
-                high--;
+                R--;
             }
-            printf("%d, %d\n", low, high);
-            if (low > high)
-            {
-                int tmp = A[high];
-                A[high] = A[low];
-                A[low] = tmp;
-            }
-            else
-            {
-                int tmp = A[low];
-                A[low] = A[high];
-                A[high] = tmp;
-            }
-            printArray(A, SIZE);
+            if (L<R)
+                swap(&A[L], &A[R]);
         }
-        printArray(A, SIZE);
-        printf("%d\n", pivot);
-        quickSort(A, left, pivot - 1);
-        quickSort(A, pivot + 1, right);
+        while (p<=right && A[p] < A[left])
+        {
+            p++;
+        }
+        p--;
+        swap(&A[left], &A[p]);
+        quickSort(A, left, p - 1);
+        quickSort(A, p + 1, right);
     }
-    else return;
 }
 
 void printArray(int A[], int size) {
@@ -60,7 +56,7 @@ void printArray(int A[], int size) {
 }
 
 int main() {
-    int A[SIZE] = { 37,10,22,30,35,13,25,24 };
-    quickSort(A, 0, SIZE);
+    int A[SIZE] = { 30,50,16,14,211,21,35,18 };
+    quickSort(A, 0, SIZE-1);
     printArray(A, SIZE);
 }
