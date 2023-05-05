@@ -2,9 +2,12 @@
   "ExpandedNodes": [
     "",
     "\\C언어",
+    "\\알고리즘_2장",
+    "\\알고리즘_2장\\EuclidUseWhile",
     "\\알고리즘_3장",
-    "\\알고리즘_3장\\mergeSort"
+    "\\알고리즘_3장\\mergeSort",
+    "\\알고리즘_3장\\quickSort"
   ],
-  "SelectedNode": "\\C언어\\15장",
+  "SelectedNode": "\\알고리즘_3장\\quickSort\\quickSort.cpp",
   "PreviewInSolutionExplorer": false
 }
