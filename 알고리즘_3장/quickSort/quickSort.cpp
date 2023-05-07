@@ -2,9 +2,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-#define SIZE 8
-
-void printArray(int A[],int size);
 
 void swap(int *a, int *b) 
 {
@@ -13,7 +10,7 @@ void swap(int *a, int *b)
     *b = tmp;
 }
 
-void quickSort(int A[], int left, int right)
+void quickSort(int* A, int left, int right)
 {
     if (left < right) 
     {
@@ -49,14 +46,57 @@ void quickSort(int A[], int left, int right)
     }
 }
 
-void printArray(int A[], int size) {
-    for (int i = 0; i < size; i++)
-        printf("%d ", A[i]);
-    printf("\n");
+int* fileRead()
+{
+    int size = 0;
+    int i = 0;
+    int* data;
+    int tmp;
+    FILE* fp = fopen("data.txt", "r");
+    if (fp == NULL)
+    {
+        printf("fail to open file\n");
+    }
+    else
+    {
+        while (!feof(fp))
+        {
+            fscanf(fp, "%d\n", &tmp);
+            size++;
+        }
+        data = (int*)malloc(sizeof(int) * size);
+        fp = fopen("data.txt", "r");
+        while (!feof(fp))
+        {
+            fscanf(fp, "%d\n", &data[i]);
+            i++;
+        }
+        fclose(fp);
+    }
+    return data;
+}
+
+void fileWrite(int* data)
+{
+    int size = _msize(data) / sizeof(int);
+    FILE* fp = fopen("result.txt", "w");
+    if (fp == NULL)
+    {
+        printf("fail to open file\n");
+    }
+    else
+    {
+        for (int i = 0; i < size; i++)
+        {
+            fprintf(fp, "%d\n", data[i]);
+        }
+        fclose(fp);
+    }
 }
 
 int main() {
-    int A[SIZE] = { 30,50,16,14,211,21,35,18 };
-    quickSort(A, 0, SIZE-1);
-    printArray(A, SIZE);
+    int* data = fileRead();
+    int size = _msize(data) / sizeof(int);
+    quickSort(data, 0, size-1);
+    fileWrite(data);
 }
