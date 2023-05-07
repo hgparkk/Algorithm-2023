@@ -17,14 +17,17 @@ void swap(int* a, int* b)
 
 int Selection(int* A, int left, int right, int k)
 {
+    //가장 왼쪽 원소의 인덱스가 가장 오른쪽 원소의 인덱스보다 작으면 다음을 단계를 실행한다.(가장 왼쪽의 원소가 가장 오른쪽의 원소보다 크거나 같으면 원소가 1개임으로 그 자체가 정렬된 것이기 때문이다.)
     if (left < right)
     {
+        //A[left]와 A[right] 사이에서 피봇을 선택하고 A[left]와 피봇의 위치를 바꾼다.
         srand(time(NULL));
         int pivot = rand() % (right - left) + left;
         swap(&A[left], &A[pivot]);
         int L = left + 1;
         int R = right;
         int p = left + 1;
+        //피봇보다 작은 값을 A[left]~A[p-1], 피봇보다 큰 값을 A[p]~A[right]로 옮긴다.
         while (L <= R)
         {
             L = left + 1;
@@ -40,22 +43,28 @@ int Selection(int* A, int left, int right, int k)
             if (L < R)
                 swap(&A[L], &A[R]);
         }
+        //피봇을 A[p]로 옮긴다.
         while (p <= right && A[p] < A[left])
         {
             p++;
         }
         p--;
         swap(&A[left], &A[p]);
+        //피봇보다 작은 그룹의 크기를 알아낸다.
         int S = (p - 1) - left + 1;
+        // 피봇보다 작은 그룹의 크기보다 k가 작으면 작은 그룹을 탐색한다.
         if (k <= S)
             return Selection(A, left, p - 1, k);
+        //피봇보다 작은 그룹의 크기가 k-1이라면 피봇을 반환한다.
         else if (k == S + 1)
             return A[p];
+        //피봇보다 작은 그룹의 크기가 k보다 크다면 큰 그룹을 탐색한다.
         else
             return Selection(A, p + 1, right, k - S - 1);
     }
 }
 
+// 임의의 숫자들의 집합 데이터 "data.txt"를 읽는다.
 int* fileRead()
 {
     int size = 0;
@@ -86,6 +95,7 @@ int* fileRead()
     return data;
 }
 
+//실행된 결과를 "result.txt"에 출력한다.
 void fileWrite(int k, int selection)
 {
     FILE* fp = fopen("result.txt", "w");
