@@ -1,4 +1,9 @@
-﻿
+﻿/*
+파일 이름: Selection.cpp
+설명 : 선택문제 알고리즘
+작성자 : 박현규
+*/
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>

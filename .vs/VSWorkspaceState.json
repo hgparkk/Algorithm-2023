@@ -2,8 +2,11 @@
   "ExpandedNodes": [
     "",
     "\\C언어",
-    "\\알고리즘_3장"
+    "\\알고리즘_2장",
+    "\\알고리즘_2장\\EuclidProject",
+    "\\알고리즘_3장",
+    "\\알고리즘_3장\\Selection"
   ],
-  "SelectedNode": "\\알고리즘_3장\\Algorithm_3.sln",
+  "SelectedNode": "\\알고리즘_2장\\EuclidProject\\test.cpp",
   "PreviewInSolutionExplorer": false
 }

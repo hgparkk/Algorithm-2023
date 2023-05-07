@@ -1,4 +1,9 @@
-﻿
+﻿/*
+파일 이름: mergeSort.cpp
+설명 : 합병정렬 알고리즘
+작성자 : 박현규
+*/
+
 #include <stdio.h>
 #include <stdlib.h>
 
