@@ -10,7 +10,7 @@ void quickSort(int A[], int left, int right)
 {
     printArray(A, SIZE);
     int low = left + 1;
-    int high = right;
+    int high = right - 1;
     long seed = time(NULL);
     srand(seed);
     int pivot = rand() % (right - left)+left;
@@ -30,7 +30,7 @@ void quickSort(int A[], int left, int right)
             {
                 high--;
             }
-            printf("%d, %d\n", low, high);
+            printf("%d, %d, %d\n", low, high, pivot);
             if (low > high)
             {
                 int tmp = A[high];
@@ -46,7 +46,6 @@ void quickSort(int A[], int left, int right)
             printArray(A, SIZE);
         }
         printArray(A, SIZE);
-        printf("%d\n", pivot);
         quickSort(A, left, pivot - 1);
         quickSort(A, pivot + 1, right);
     }
