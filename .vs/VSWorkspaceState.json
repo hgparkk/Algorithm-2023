@@ -1,16 +1,12 @@
 {
   "ExpandedNodes": [
     "",
-    "\\알고리즘_1장",
-    "\\알고리즘_1장\\calCoins",
+    "\\C언어",
     "\\알고리즘_2장",
     "\\알고리즘_2장\\EuclidProject",
     "\\알고리즘_3장",
-    "\\알고리즘_3장\\HelloWorld",
-    "\\알고리즘_3장\\mergeSort",
-    "\\알고리즘_3장\\pointExample",
-    "\\알고리즘_3장\\quickSort"
+    "\\알고리즘_3장\\Selection"
   ],
-  "SelectedNode": "\\알고리즘_3장\\HelloWorld\\HelloWorld.cpp",
+  "SelectedNode": "\\알고리즘_2장\\EuclidProject\\test.cpp",
   "PreviewInSolutionExplorer": false
 }
