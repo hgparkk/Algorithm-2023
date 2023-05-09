@@ -6,13 +6,7 @@
 
 #include <stdio.h>
 #include <stdlib.h>
-
-typedef struct _Node
-{
-	int value;
-	_Node* nodeL;
-	_Node* nodeR;
-}Node;
+#include "tree.h"
 
 Node* root;
 
