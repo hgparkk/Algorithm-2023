@@ -8,6 +8,7 @@
 #include <stdlib.h>
 #include "tree.h"
 
+// 임의의 값(value)를 가진 노드를 생성한다. 초기 왼쪽자식노드와 오른쪽자식노드는 NULL이다.
 Node* createNode(int value)
 {
 	Node* node = (Node*)malloc(sizeof(Node));
@@ -18,6 +19,7 @@ Node* createNode(int value)
 	return node;
 }
 
+// 노드들의 부모 자식 관계를 설정한다.
 Node* connectChild(Node* parent, Node* left, Node* right)
 {
 	if (parent == NULL) return NULL;
@@ -30,6 +32,7 @@ Node* connectChild(Node* parent, Node* left, Node* right)
 
 // findNode() 함수는 이진트리에서 구현할 수 없음
 
+// 임의의 노드(*where)의 왼쪽자식노드를 해당노드(*new_node)로 한다.
 Node* insertLeftNode(Node* where, Node* new_node)
 {
 	if (where == NULL) return NULL;
@@ -40,6 +43,7 @@ Node* insertLeftNode(Node* where, Node* new_node)
 	}
 }
 
+// 임의의 노드(*where)의 오른쪽자식노드를 해당노드(*new_node)로 한다.
 Node* insertRightNode(Node* where, Node* new_node)
 {
 	if (where == NULL) return NULL;
@@ -50,6 +54,7 @@ Node* insertRightNode(Node* where, Node* new_node)
 	}
 }
 
+// 트리를 출력한다. (출력은 루트 > 왼쪽자식 > 오른쪽자식 노드 순으로 출력한다.)
 void printTree(Node* root)
 {
 	if (root == NULL) return;
