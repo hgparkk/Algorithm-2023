@@ -127,8 +127,9 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="binaryTreeExample.cpp" />
+    <ClCompile Include="tree.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="test.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="tree.h" />
