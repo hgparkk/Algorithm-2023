@@ -1,5 +1,5 @@
 ﻿/*
-파일 이름: binaryTreeExample.cpp
+파일 이름: tree.cpp
 설명 : 이진트리 예제
 작성자 : 박현규
 */
