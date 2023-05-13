@@ -11,5 +11,8 @@ Node* makeTree()
 
 	connectChild(root, nodeL, nodeR);
 
+	insertLeftNode(root->right, createNode(400));
+	insertRightNode(root->right, createNode(500));
+
 	return root;
 }
