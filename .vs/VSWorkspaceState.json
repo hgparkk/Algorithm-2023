@@ -2,11 +2,9 @@
   "ExpandedNodes": [
     "",
     "\\C언어",
-    "\\알고리즘_3장\\HelloWorld",
-    "\\알고리즘_3장\\mergeSort",
-    "\\알고리즘_3장\\pointExample",
-    "\\알고리즘_3장\\quickSort"
+    "\\C언어\\11장",
+    "\\C언어\\11장\\binaryTreeExample"
   ],
-  "SelectedNode": "\\알고리즘_4장",
+  "SelectedNode": "\\C언어\\11장\\cLanguagePractice_11.sln",
   "PreviewInSolutionExplorer": false
 }
