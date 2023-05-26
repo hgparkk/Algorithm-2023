@@ -3,8 +3,10 @@
     "",
     "\\C언어",
     "\\C언어\\11장",
-    "\\알고리즘_2장\\EuclidProject"
+    "\\C언어\\11장\\binaryTreeExample",
+    "\\알고리즘_3장",
+    "\\알고리즘_3장\\Selection"
   ],
-  "SelectedNode": "\\C언어\\11장\\cLanguagePractice_11.sln",
+  "SelectedNode": "\\C언어\\11장\\binaryTreeExample\\test.cpp",
   "PreviewInSolutionExplorer": false
 }
