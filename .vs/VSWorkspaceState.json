@@ -1,12 +1,8 @@
 {
   "ExpandedNodes": [
     "",
-    "\\C언어",
-    "\\C언어\\11장",
-    "\\C언어\\11장\\binaryTreeExample",
-    "\\알고리즘_3장",
-    "\\알고리즘_3장\\Selection"
+    "\\알고리즘_4장\\findSmallestTree"
   ],
-  "SelectedNode": "\\C언어\\11장\\binaryTreeExample\\test.cpp",
+  "SelectedNode": "\\알고리즘_4장",
   "PreviewInSolutionExplorer": false
 }
