@@ -1,7 +1,12 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\알고리즘_4장",
+    "\\알고리즘_4장\\findSmallestTree",
+    "\\알고리즘_5장",
+    "\\알고리즘_5장\\AllPairsShortest",
+    "\\알고리즘_5장\\Knapsack"
   ],
-  "SelectedNode": "\\cLanguagePractice_15.sln",
+  "SelectedNode": "\\알고리즘_5장\\Algorithm_5.sln",
   "PreviewInSolutionExplorer": false
 }
