@@ -1,8 +1,13 @@
 {
   "ExpandedNodes": [
     "",
-    "\\알고리즘_4장\\findSmallestTree"
+    "\\AlgorithmProject",
+    "\\AlgorithmProject\\AlgorithmProject",
+    "\\알고리즘_3장",
+    "\\알고리즘_3장\\ClosestPair",
+    "\\알고리즘_3장\\quickSort",
+    "\\알고리즘_3장\\Selection"
   ],
-  "SelectedNode": "\\알고리즘_4장",
+  "SelectedNode": "\\AlgorithmProject\\AlgorithmProject\\AlgorithmProject.cpp",
   "PreviewInSolutionExplorer": false
 }
